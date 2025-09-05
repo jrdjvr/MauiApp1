@@ -21,6 +21,11 @@
         ContentTemplate="{DataTemplate local:SalesForecast}"
         Route="SalesForecast" />
 
+    <ShellContent
+        Title="Calendar"
+        ContentTemplate="{DataTemplate local:Calendar}"
+        Route="Calendar" />
+
 
 
 

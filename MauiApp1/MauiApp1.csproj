@@ -68,6 +68,9 @@
 	  <Compile Update="IncomeSummary.xaml.cs">
 	    <DependentUpon>IncomeSummary.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Calendar.xaml.cs">
+	    <DependentUpon>Calendar.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="SalesForecast.xaml.cs">
 	    <DependentUpon>SalesForecast.xaml</DependentUpon>
 	  </Compile>
@@ -75,6 +78,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="IncomeSummary.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Calendar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SalesForecast.xaml">
