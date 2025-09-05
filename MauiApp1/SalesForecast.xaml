@@ -16,8 +16,8 @@
 
 
             <!-- App Title -->
-            <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center"
-                                 
+            <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+
                 <Label Text="App Name"
                        FontSize="20"
                        TextColor="White"
