@@ -7,7 +7,7 @@
 
     <Grid RowDefinitions="Auto, *" ColumnDefinitions="*">
         
-        <!-- Header -->
+        <!-- title -->
         <Grid BackgroundColor="#D18E2D" Padding="15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -15,7 +15,7 @@
             </Grid.ColumnDefinitions>
 
 
-            <!-- App Title -->
+            <!-- app title -->
             <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
 
                 <Label Text="App Name"
@@ -35,7 +35,7 @@
             </VerticalStackLayout>
         </Grid>
 
-        <!-- Main Content -->
+        
         <ScrollView Grid.Row="1">
             <VerticalStackLayout Padding="15" Spacing="20">
 
@@ -62,7 +62,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <!-- Revenue Details -->
+                <!-- for revenue placeholders -->
                 <Label FontSize="16" TextColor="Black">
                     <Label.FormattedText>
                         <FormattedString>

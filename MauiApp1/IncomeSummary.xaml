@@ -5,14 +5,14 @@
 
     <Grid RowDefinitions="Auto,*">
 
-        <!-- Top Bar -->
+        <!-- title -->
         <Grid BackgroundColor="#C07A2A" Padding="10" Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Title + Button -->
+            <!-- title -->
             <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" Spacing="5">
                 <Label Text="App Name"
                        FontSize="20"
@@ -26,12 +26,12 @@
             </VerticalStackLayout>
         </Grid>
 
-        <!-- Main Content -->
+        
         <ScrollView Grid.Row="1" Padding="20">
 
             <VerticalStackLayout Spacing="20">
 
-                <!-- Today's Income Editable -->
+                <!-- Today's Income placeholder -->
                 <Frame BackgroundColor="#FFD966"
                        CornerRadius="15"
                        Padding="15"
@@ -59,13 +59,13 @@
                            TextColor="Gray"/>
                 </Frame>
 
-                <!-- Items Sold -->
+                <!-- Table title -->
                 <Label Text="Items Sold Today"
                        FontAttributes="Bold"
                        FontSize="18"
                        TextColor="#7A5C1A"/>
 
-                <!-- Fixed Table with Borders -->
+                <!-- Table with Borders -->
                 <CollectionView>
                     <CollectionView.Header>
                         <Grid ColumnDefinitions="2*,1*,1*,1*,1.5*" Padding="5" BackgroundColor="#C07A2A">
@@ -94,7 +94,7 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
 
-                <!-- Blank Input Row -->
+                <!-- table input (di ko sure if need toh) -->
                 <Grid ColumnDefinitions="2*,1*,1*,1*,1.5*" Padding="5" BackgroundColor="#EEE">
                     <Entry Placeholder="Item Name" Grid.Column="0"/>
                     <Entry Placeholder="Amount" Grid.Column="1" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
